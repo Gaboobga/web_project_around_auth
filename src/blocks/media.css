@@ -1,0 +1,241 @@
+/*MEDIA QUERIES RESPONSIVAS */
+
+/* Desktop */
+@media screen and (max-width: 1024px) {
+  .page {
+    padding: 0 24px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .profile__add-button {
+    max-width: 100px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 0 19px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile__add-button {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Popup de formularios (editar / nuevo lugar) */
+  .popup:not(.popup_type_image) .popup__container {
+    width: 282px;
+    padding: 25px 22px;
+  }
+
+  .popup:not(.popup_type_image) .popup__title {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .popup:not(.popup_type_image) .popup__input {
+    font-size: 12px;
+  }
+
+  .popup:not(.popup_type_image) .popup__save-button {
+    font-size: 14px;
+  }
+
+  /* Popup de imagen */
+  .popup_type_image .popup__container,
+  .popup_type_image .popup__figure,
+  .popup_type_image .popup__image {
+    max-width: 90vw;
+    max-height: 75vh;
+  }
+
+  .popup_type_image .popup__close-button {
+    top: 10px;
+    right: 10px;
+  }
+
+  /* Auth - Tablet */
+  .auth {
+    max-width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .auth__button {
+    margin-top: 100px;
+  }
+
+  /* Header hamburguesa - tablet y mobile */
+  .header {
+    flex-wrap: wrap;
+    padding: 28px 0;
+    border-bottom: none;
+  }
+
+  .header__nav_open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    gap: 18px;
+    order: 3;
+    border-top: 1px solid rgba(84, 84, 84, 0.7);
+    margin-top: 8px;
+  }
+
+  .header__title_hidden {
+    display: none;
+  }
+}
+
+/* Móvil */
+@media screen and (max-width: 544px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    max-width: 282px;
+    margin: 0 auto;
+  }
+
+  .profile__avatar {
+    margin: 0 auto 24px;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .profile__name {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .profile__edit-button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    background: url(../images/edit_button.svg) no-repeat center;
+    background-size: 10px 10px;
+    padding: 0;
+    border-radius: 2px;
+  }
+
+  .profile__occupation {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .profile__add-button {
+    width: 100%;
+    max-width: 282px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/add_button.svg) no-repeat center;
+    background-size: 22px 22px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  /* Popup de formularios (editar / nuevo lugar) */
+  .popup:not(.popup_type_image) .popup__title {
+    margin-bottom: 70px;
+  }
+
+  .popup:not(.popup_type_image) .popup__input:first-of-type {
+    margin-bottom: 10px;
+  }
+
+  .popup:not(.popup_type_image) .popup__input {
+    width: 100%;
+  }
+
+  /* Popup de imagen  */
+  .popup_type_image .popup__container,
+  .popup_type_image .popup__figure,
+  .popup_type_image .popup__image {
+    max-width: 92vw;
+    max-height: 75vh;
+  }
+
+  .popup__caption {
+    font-size: 12px;
+  }
+
+  .popup_type_image .popup__close-button {
+    top: 8px;
+    right: 8px;
+  }
+
+  /* Auth - Mobile */
+  .auth {
+    max-width: 100%;
+    margin: 30px auto 0;
+    padding: 0 28px;
+  }
+
+  .auth__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .auth__input {
+    font-size: 14px;
+  }
+
+  .auth__button {
+    margin-top: 80px;
+    font-size: 16px;
+  }
+
+  .auth__redirect {
+    font-size: 12px;
+  }
+
+  /* Header mobile - auth pages */
+  .header__link {
+    font-size: 14px;
+  }
+
+  /* InfoTooltip mobile */
+  .popup__container_tooltip {
+    padding: 40px 20px;
+    max-width: 90vw;
+  }
+
+  .tooltip__text {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,158 @@
+/* Auth - Login y Register */
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 358px;
+  width: 100%;
+  margin: 60px auto 0;
+  padding: 0 16px;
+}
+
+.auth__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.auth__input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  color: #cccccc;
+  font-size: 14px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  outline: none;
+  width: 100%;
+}
+
+.auth__input::placeholder {
+  color: #cccccc;
+}
+
+.auth__button {
+  background: #ffffff;
+  border: none;
+  border-radius: 2px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.auth__button:hover {
+  opacity: 0.85;
+}
+
+.auth__redirect {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.auth__link {
+  color: #ffffff;
+}
+
+/* Header nav */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__email {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.header__button {
+  background: transparent;
+  border: none;
+  color: #a9a9a9;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0;
+}
+
+.header__button:hover {
+  opacity: 0.85;
+}
+
+.header__link {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  opacity: 0.85;
+}
+
+/* InfoTooltip */
+.popup__container_tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 430px;
+  padding: 60px;
+  gap: 32px;
+}
+
+.tooltip__icon {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tooltip__icon_success {
+  background-image: url('../images/Registro_correcto.svg');
+}
+
+.tooltip__icon_fail {
+  background-image: url('../images/Registro_incorrecto.svg');
+}
+
+.tooltip__text {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+/* Header hamburger - solo mobile */
+.header__mobile-menu {
+  display: none;
+}
+
+.header__hamburger {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 0;
+}
